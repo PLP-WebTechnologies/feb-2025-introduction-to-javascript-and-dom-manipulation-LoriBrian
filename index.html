@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript DOM Manipulation</title>
+  <style>
+    #dynamic-text {
+      color: navy;
+      font-size: 1.2rem;
+    }
+    .box {
+      padding: 10px;
+      border: 2px solid #007bff;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to EPL Fan Zone</h1>
+  </header>
+
+  <section>
+    <p id="dynamic-text">Click the button to change this text!</p>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+  </section>
+
+  <div id="content-area" class="box">
+    <p>This is a content area where new elements will be added.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 EPL Fan Zone</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
